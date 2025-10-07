@@ -1,5 +1,7 @@
 # aws-static-site
 Static website hosted on AWS S3 + CloudFront
+🔗 [Live Website](https://khalidhashim.com)
+
 
  AWS Static Website Deployment Summary
 
