@@ -1,7 +1,7 @@
 # aws-static-site
 Static website hosted on AWS S3 + CloudFront
 
-🔧 AWS Static Website Deployment Summary
+ AWS Static Website Deployment Summary
 
 1. Purchased a Domain  
    Registered the custom domain `khalidhashim.com` via Route 53 for $15/year.
@@ -24,13 +24,13 @@ Static website hosted on AWS S3 + CloudFront
 5. Updated DNS in Route 53  
    - Created a new A (alias) record for `khalidhashim.com` pointing to the CloudFront distribution domain.
 
-⚠️ Challenges Faced
+ Challenges Faced
 
 Initially, I incorrectly pointed the Route 53 record to the wrong S3 region’s website endpoint, which caused a 
 400 error (`IncorrectEndpoint`). After troubleshooting, I identified and corrected the S3 bucket region and updated the DNS record accordingly. 
 This resolved the issue and the site loaded successfully.
 
-✅ Outcome
+ Outcome
 
 Successfully deployed a secure, serverless static website with a custom domain, HTTPS, and global CDN distribution using the following AWS services:
 
@@ -38,4 +38,3 @@ Successfully deployed a secure, serverless static website with a custom domain, 
 - Route 53
 - AWS Certificate Manager (ACM)
 - CloudFront
-
