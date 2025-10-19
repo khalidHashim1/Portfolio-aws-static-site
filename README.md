@@ -25,9 +25,11 @@
 - Integrated with a Lambda function to log IP, timestamp, and user-agent.
 - Stored logs in a DynamoDB table.
 
-⚠️ Challenge Faced
-- Incorrectly configured S3 region initially, causing a 400 error.
+⚠️ Challenges Faced
+- Initially pointed Route 53 to the wrong S3 region, causing a 400 error.
 - Resolved by correcting the region and updating the DNS record.
+- Faced issues with enabling CORS in API Gateway; resolved by updating headers and method responses.
+- Encountered problems with the Lambda function in the original runtime; switching to Python resolved them.
 
 ✅ Outcome
 Successfully deployed a secure, serverless static website with:
