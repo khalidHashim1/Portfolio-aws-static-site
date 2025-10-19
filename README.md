@@ -1,5 +1,7 @@
 🌐 AWS Static Website Deployment – khalidhashim.com
 
+🔗 Live Website: https://khalidhashim.com
+
 ✅ Domain Registration
 - Registered custom domain `khalidhashim.com` via Route 53 ($15/year).
 
