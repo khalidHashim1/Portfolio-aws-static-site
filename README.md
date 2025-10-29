@@ -26,7 +26,13 @@
 - Created a REST API using API Gateway to capture visitor data.
 - Integrated with a Lambda function to log IP, timestamp, and user-agent.
 - Stored logs in a DynamoDB table.
-
+  
+✉️ Contact Form
+- Separate contact form page linked from main site.
+- Lambda function stores submissions in DynamoDB and sends email notifications.
+- API Gateway POST endpoint with CORS enabled for frontend fetch() requests.
+- **Note:** Initially had issues calling the API because it was deployed to the default stage. The frontend must call the API **with the full path** `/contactForm`.
+  
 ⚠️ Challenges Faced
 - Initially pointed Route 53 to the wrong S3 region, causing a 400 error.
 - Resolved by correcting the region and updating the DNS record.
@@ -38,3 +44,4 @@ Successfully deployed a secure, serverless static website with:
 - Custom domain + HTTPS
 - Global CDN via CloudFront
 - Visitor logging using API Gateway, Lambda, and DynamoDB
+- Fully functional contact form with email notifications and database storage.
